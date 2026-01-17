@@ -1,0 +1,298 @@
+/* SnowMigrate TUI Styles */
+
+/* Base theme */
+$background: #1a1a2e;
+$surface: #16213e;
+$primary: #0f3460;
+$accent: #e94560;
+$text: #eaeaea;
+$text-muted: #888888;
+$success: #4caf50;
+$warning: #ff9800;
+$error: #f44336;
+
+Screen {
+    background: $background;
+}
+
+/* Header styling */
+Header {
+    background: $primary;
+    color: $text;
+}
+
+/* Footer styling */
+Footer {
+    background: $surface;
+}
+
+/* Tab styling */
+TabbedContent {
+    background: $background;
+}
+
+TabPane {
+    padding: 1;
+}
+
+/* Status colors */
+.status-running {
+    color: #2196f3;
+}
+
+.status-complete {
+    color: $success;
+}
+
+.status-failed {
+    color: $error;
+}
+
+.status-paused {
+    color: $warning;
+}
+
+.status-queued {
+    color: $text-muted;
+}
+
+.status-unknown {
+    color: $text-muted;
+}
+
+.status-connected {
+    color: $success;
+}
+
+.status-testing {
+    color: #2196f3;
+}
+
+/* Connection cards */
+.connection-card {
+    border: solid $primary;
+    padding: 1;
+    margin: 1;
+    height: auto;
+}
+
+.connection-card:focus {
+    border: solid $accent;
+}
+
+.connection-card .title {
+    text-style: bold;
+}
+
+.connection-card .info {
+    color: $text-muted;
+}
+
+/* Form styling */
+.form-container {
+    padding: 1 2;
+    height: auto;
+}
+
+.form-row {
+    height: auto;
+    margin-bottom: 1;
+}
+
+.form-label {
+    width: 20;
+    text-align: right;
+    padding-right: 1;
+}
+
+Input {
+    width: 40;
+}
+
+Input:focus {
+    border: solid $accent;
+}
+
+Select {
+    width: 40;
+}
+
+/* Button styling */
+Button {
+    margin: 0 1;
+}
+
+Button.primary {
+    background: $primary;
+}
+
+Button.success {
+    background: $success;
+}
+
+Button.danger {
+    background: $error;
+}
+
+Button.warning {
+    background: $warning;
+}
+
+/* Progress bar */
+ProgressBar {
+    padding: 0 1;
+}
+
+ProgressBar > .bar--bar {
+    color: $accent;
+}
+
+ProgressBar > .bar--complete {
+    color: $success;
+}
+
+/* DataTable */
+DataTable {
+    height: 100%;
+}
+
+DataTable > .datatable--header {
+    background: $primary;
+    text-style: bold;
+}
+
+DataTable > .datatable--cursor {
+    background: $accent;
+}
+
+/* Tree widget */
+Tree {
+    padding: 1;
+}
+
+Tree:focus > .tree--cursor {
+    background: $accent;
+}
+
+/* Log viewer */
+.log-viewer {
+    background: #0d0d0d;
+    padding: 1;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.log-viewer .log-line {
+    height: auto;
+}
+
+.log-viewer .log-error {
+    color: $error;
+}
+
+.log-viewer .log-warning {
+    color: $warning;
+}
+
+.log-viewer .log-info {
+    color: $text;
+}
+
+/* Migration row */
+.migration-row {
+    height: auto;
+    padding: 1;
+    margin-bottom: 1;
+    border: solid $primary;
+}
+
+.migration-row:focus {
+    border: solid $accent;
+}
+
+.migration-row .source {
+    text-style: bold;
+}
+
+.migration-row .target {
+    color: $text-muted;
+}
+
+.migration-row .controls {
+    dock: right;
+}
+
+/* Dashboard layout */
+.dashboard-container {
+    height: 100%;
+}
+
+.dashboard-stats {
+    height: 5;
+    background: $surface;
+    padding: 1;
+}
+
+.stat-box {
+    width: 1fr;
+    content-align: center middle;
+}
+
+.stat-value {
+    text-style: bold;
+    text-align: center;
+}
+
+.stat-label {
+    color: $text-muted;
+    text-align: center;
+}
+
+/* Empty state */
+.empty-state {
+    content-align: center middle;
+    height: 100%;
+    color: $text-muted;
+}
+
+/* Modal dialogs */
+.modal-container {
+    align: center middle;
+}
+
+.modal-dialog {
+    width: 60;
+    height: auto;
+    background: $surface;
+    border: solid $primary;
+    padding: 1 2;
+}
+
+.modal-title {
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+.modal-buttons {
+    margin-top: 1;
+    align: right middle;
+}
+
+/* Scrollable containers */
+.scrollable {
+    overflow-y: scroll;
+}
+
+/* Section headers */
+.section-header {
+    background: $surface;
+    padding: 0 1;
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+/* Pane containers */
+.pane-container {
+    height: 100%;
+    padding: 0;
+}
